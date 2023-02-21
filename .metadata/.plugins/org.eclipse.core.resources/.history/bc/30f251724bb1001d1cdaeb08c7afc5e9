@@ -1,0 +1,10 @@
+server:
+ port: 9000
+spring:
+ cloud:
+  gateway:
+   routes:
+    - id: ProjectUser
+      uri: http://localhost:8085/
+      predicates:
+      - Path=/api/v1/user/** 

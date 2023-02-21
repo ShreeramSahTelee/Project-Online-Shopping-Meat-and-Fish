@@ -1,0 +1,6 @@
+server.port: 9000
+
+
+spring.cloud.gateway.routes-id:ProjectUser
+spring.cloud.gateway.routes-uri:http://localhost:8085/
+spring.cloud.gateway.routes-predicates-Path=/api/v1/user/**
